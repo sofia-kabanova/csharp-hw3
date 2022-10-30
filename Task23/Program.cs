@@ -1,4 +1,4 @@
-// 23. Напишите программу, которая
+﻿// 23. Напишите программу, которая
 // принимает на вход число N
 // выдает таблицу кубов чисел от 1 до N
 // 3 -> 1, 8, 27
@@ -7,13 +7,17 @@ Console.Clear();
 Console.Write("Введите число N: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int count = 1;
-void Cube (int n, int c)
+void Cube(int n, int c)
 {
-    while (c<=n)
+    while (c <= n)
     {
-      Console.WriteLine($"{c,3} {c*c*c,6}");
-      c++;
+        Console.WriteLine($"{c,3} {c * c * c,6}");
+        c++;
     }
 }
-Cube (num, count);
+if (num <= 1) Console.Write("Диапазон для поиска кубов не задан. ");
+else
+{
+    Console.WriteLine($"Число:  Куб:");
+    Cube(num, count);
 }
