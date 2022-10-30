@@ -20,7 +20,7 @@ Console.Write("С2: ");
 int c2 = Convert.ToInt32(Console.ReadLine());
 double Distance(int x1, int y1, int x2, int y2, int z1, int z2)
 {
-double d=(x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1);
-return Math.Round(Math.Sqrt(d), 2, MidpointRounding.ToZero);
+    double d = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) + (z2 - z1) * (z2 - z1);
+    return Math.Round(Math.Sqrt(d), 2, MidpointRounding.ToZero);
 }
 Console.WriteLine(Distance(a1, b1, a2, b2, c1, c2));
